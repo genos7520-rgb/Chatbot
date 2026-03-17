@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3a3a45; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #48484f; }
+
+/* ── AI message bubble prose styles ── */
+.msg-bubble-ai p { margin-bottom: 0.65em; }
+.msg-bubble-ai p:last-child { margin-bottom: 0; }
+.msg-bubble-ai strong { font-weight: 600; }
+.msg-bubble-ai em { font-style: italic; color: #9e98a0; }
+.msg-bubble-ai code {
+  background: #252530;
+  border: 1px solid #38383f;
+  border-radius: 4px;
+  padding: 0.1em 0.38em;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #e8956d;
+}
+.msg-bubble-ai pre {
+  background: #16161c;
+  border: 1px solid #2e2e38;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  margin: 0.65em 0;
+  position: relative;
+}
+.msg-bubble-ai pre code {
+  background: none;
+  border: none;
+  padding: 1rem 1.1rem;
+  color: #c8c0b8;
+  font-size: 0.85em;
+  display: block;
+  overflow-x: auto;
+}
+.msg-bubble-ai ul,
+.msg-bubble-ai ol { padding-left: 1.35em; margin: 0.4em 0; }
+.msg-bubble-ai li { margin-bottom: 0.25em; }
+.msg-bubble-ai h1 { font-family: 'Lora', Georgia, serif; font-size: 1.25em; font-weight: 500; margin: 0.8em 0 0.35em; }
+.msg-bubble-ai h2 { font-family: 'Lora', Georgia, serif; font-size: 1.1em; font-weight: 500; margin: 0.7em 0 0.3em; }
+.msg-bubble-ai h3 { font-size: 1em; font-weight: 600; margin: 0.6em 0 0.25em; }
+.msg-bubble-ai blockquote {
+  border-left: 3px solid #c4a882;
+  padding-left: 0.85rem;
+  color: #9e98a0;
+  margin: 0.5em 0;
+  font-style: italic;
+}
+.msg-bubble-ai hr { border: none; border-top: 1px solid #2e2e38; margin: 0.8em 0; }
+.msg-bubble-ai a { color: #D97757; text-decoration: none; }
+.msg-bubble-ai a:hover { text-decoration: underline; }
+.msg-bubble-ai table { border-collapse: collapse; width: 100%; margin: 0.65em 0; font-size: 0.88em; }
+.msg-bubble-ai th,
+.msg-bubble-ai td { border: 1px solid #2e2e38; padding: 0.4rem 0.75rem; text-align: left; }
+.msg-bubble-ai th { background: #22222a; font-weight: 600; color: #9e98a0; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.04em; }
+.msg-bubble-ai tr:hover td { background: rgba(255,255,255,0.02); }
+
+/* hljs override */
+.hljs { background: transparent !important; padding: 0 !important; }
